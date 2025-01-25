@@ -128,7 +128,6 @@ void signal_fun(int sig){
 }
 
 int main(){
-	std::function<void(int)> handle = signal_fun;
 	signal(SIGINT,signal_fun);
     return server.exec();
 }
