@@ -48,6 +48,7 @@ public:
 		}
 		close(serverFd);
 		std::cout<<"断开连接"<<std::endl;
+		exit(0);
 	}
 private:
 	void init(){

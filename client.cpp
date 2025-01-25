@@ -45,6 +45,7 @@ public:
 	void disconnect(){
 		close(clientFd);
 		std::cout<<"断开连接"<<std::endl;
+        exit(0);
 	}
 private:
     //协议地址簇
